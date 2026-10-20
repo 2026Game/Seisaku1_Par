@@ -1,5 +1,6 @@
 using UnityEngine;
 using TMPro;
+using Unity.VisualScripting;
 
 public class GameDirector : MonoBehaviour
 {
@@ -10,12 +11,15 @@ public class GameDirector : MonoBehaviour
     GameObject NGA;
     public GhostDirector GD;
     public NGhostDirectorB GDB;
+    public static int miss = 0;
    public static int score = 0;
     float time = 0;
     static int retime;
     int minute = 0;
     int hour = 0;
     int stop = 1;
+
+   
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -59,7 +63,47 @@ public class GameDirector : MonoBehaviour
             stop = 0;
         }
 
-       
 
+        if (GhostDirector.missA == 1 && GhostDirector.Aobake == 0)
+        {
+
+            GhostDirector.missA = 0;
+            GhostDirector.Aobake = 1;
+            if (GhostDirector.missA == 0)
+            {
+                GhostDirector.missA = 1;
+            }
+
+
+        }
+        else if (NGhostDirectorB.missB == 1 && NGhostDirectorB.Bobake == 0)
+        {
+            NGhostDirectorB.missB = 0;
+            NGhostDirectorB.Bobake = 1;
+            if(NGhostDirectorB.missB == 0)
+            {
+                NGhostDirectorB.missB = 1;
+            }
+
+
+        }
+            /*else if (NGhostDirectorC.missC == 1 && Input.anyKeyDown && !Input.GetKey(KeyCode.C))
+            {
+                NGhostDirectorC.missC = 0;
+                if (NGhostDirectorC.missC == 0)
+                {
+                    score -= 50;
+                    NGhostDirectorC.missC = 1;
+                }
+            }
+            
+            else if(Input.anyKeyDown && miss == 0)
+            {
+                score -= 50;
+            }*/
+        
+        
+       
+        
     }
 }
