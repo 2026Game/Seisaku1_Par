@@ -19,7 +19,7 @@ public class GameDirector : MonoBehaviour
     int hour = 0;
     int stop = 1;
 
-   
+
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -63,10 +63,9 @@ public class GameDirector : MonoBehaviour
             stop = 0;
         }
 
-
+        
         if (GhostDirector.missA == 1 && GhostDirector.Aobake == 0)
         {
-
             GhostDirector.missA = 0;
             GhostDirector.Aobake = 1;
             if (GhostDirector.missA == 0)
@@ -74,36 +73,37 @@ public class GameDirector : MonoBehaviour
                 GhostDirector.missA = 1;
             }
 
-
         }
         else if (NGhostDirectorB.missB == 1 && NGhostDirectorB.Bobake == 0)
         {
             NGhostDirectorB.missB = 0;
             NGhostDirectorB.Bobake = 1;
-            if(NGhostDirectorB.missB == 0)
+            if (NGhostDirectorB.missB == 0)
             {
                 NGhostDirectorB.missB = 1;
             }
-
-
         }
-            /*else if (NGhostDirectorC.missC == 1 && Input.anyKeyDown && !Input.GetKey(KeyCode.C))
+        else if (NGhostDirectorC.missC == 1 && NGhostDirectorC.Cobake == 0)
+        {
+            NGhostDirectorC.missC = 0;
+            NGhostDirectorC.Cobake = 1;
+            if (NGhostDirectorC.missC == 0)
             {
-                NGhostDirectorC.missC = 0;
-                if (NGhostDirectorC.missC == 0)
-                {
-                    score -= 50;
-                    NGhostDirectorC.missC = 1;
-                }
+                NGhostDirectorC.missC = 1;
             }
-            
-            else if(Input.anyKeyDown && miss == 0)
+        }
+        else if (NGhostDirectorD.missD == 1 && NGhostDirectorD.Dobake == 0)
+        {
+            NGhostDirectorD.missD = 0;
+            NGhostDirectorD.Dobake = 1;
+            if (NGhostDirectorD.missD == 0)
             {
-                score -= 50;
-            }*/
-        
-        
-       
-        
+                NGhostDirectorD.missD = 1;
+            }
+        }
+
+
+
+
     }
 }
