@@ -28,6 +28,7 @@ public class GhostDirector : MonoBehaviour
         else if (Input.anyKeyDown && !Input.GetKeyDown(KeyCode.A))
         {
             Aobake = 0;
+            
         }
 
         if(NGAretime==0)

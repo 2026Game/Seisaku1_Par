@@ -28,6 +28,7 @@ public class NGhostDirectorB : MonoBehaviour
         else if (Input.anyKeyDown && !Input.GetKeyDown(KeyCode.B))
         {
             Bobake = 0;
+            
         }
 
         if (NGBretime == 0)
