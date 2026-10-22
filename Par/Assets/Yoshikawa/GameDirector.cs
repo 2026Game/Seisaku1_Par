@@ -152,8 +152,107 @@ public class GameDirector : MonoBehaviour
             NGhostDirectorJ.Jobake = 1;
             if (NGhostDirectorJ.missJ == 0)
             {
-                score -= 50;
                 NGhostDirectorJ.missJ = 1;
+            }
+        }
+        else if (NGhostDirectorK.missK == 1 && NGhostDirectorK.Kobake == 0)
+        {
+            NGhostDirectorK.missK = 0;
+            NGhostDirectorK.Kobake = 1;
+            if (NGhostDirectorK.missK == 0)
+            {
+                NGhostDirectorK.missK = 1;
+            }
+        }
+        else if (NGhostDirectorL.missL == 1 && NGhostDirectorL.Lobake == 0)
+        {
+            NGhostDirectorL.missL = 0;
+            NGhostDirectorL.Lobake = 1;
+            if (NGhostDirectorL.missL == 0)
+            {
+                NGhostDirectorL.missL = 1;
+            }
+        }
+        else if (NGhostDirectorM.missM == 1 && NGhostDirectorM.Mobake == 0)
+        {
+            NGhostDirectorM.missM = 0;
+            NGhostDirectorM.Mobake = 1;
+            if (NGhostDirectorM.missM == 0)
+            {
+                NGhostDirectorM.missM = 1;
+            }
+        }
+        else if (NGhostDirectorN.missN == 1 && NGhostDirectorN.Nobake == 0)
+        {
+            NGhostDirectorN.missN = 0;
+            NGhostDirectorN.Nobake = 1;
+            if (NGhostDirectorN.missN == 0)
+            {
+                NGhostDirectorN.missN = 1;
+            }
+        }
+        else if (NGhostDirectorO.missO == 1 && NGhostDirectorO.Oobake == 0)
+        {
+            NGhostDirectorO.missO = 0;
+            NGhostDirectorO.Oobake = 1;
+            if (NGhostDirectorO.missO == 0)
+            {
+                NGhostDirectorO.missO = 1;
+            }
+        }
+        else if (NGhostDirectorP.missP == 1 && NGhostDirectorP.Pobake == 0)
+        {
+            NGhostDirectorP.missP = 0;
+            NGhostDirectorP.Pobake = 1;
+            if (NGhostDirectorP.missP == 0)
+            {
+                NGhostDirectorP.missP = 1;
+            }
+        }
+        else if (NGhostDirectorQ.missQ == 1 && NGhostDirectorQ.Qobake == 0)
+        {
+            NGhostDirectorQ.missQ = 0;
+            NGhostDirectorQ.Qobake = 1;
+            if (NGhostDirectorQ.missQ == 0)
+            {
+                NGhostDirectorQ.missQ = 1;
+            }
+        }
+        else if (NGhostDirectorR.missR == 1 && NGhostDirectorR.Robake == 0)
+        {
+            NGhostDirectorR.missR = 0;
+            NGhostDirectorR.Robake = 1;
+            if (NGhostDirectorR.missR == 0)
+            {
+                NGhostDirectorR.missR = 1;
+            }
+        }
+        else if (NGhostDirectorS.missS == 1 && NGhostDirectorS.Sobake == 0)
+        {
+            NGhostDirectorS.missS = 0;
+            NGhostDirectorS.Sobake = 1;
+            if (NGhostDirectorS.missS == 0)
+            {
+                NGhostDirectorS.missS = 1;
+            }
+        }
+        else if (NGhostDirectorT.missT == 1 && NGhostDirectorT.Tobake == 0)
+        {
+            NGhostDirectorT.missT = 0;
+            NGhostDirectorT.Tobake = 1;
+            if (NGhostDirectorT.missT == 0)
+            {
+                NGhostDirectorT.missT = 1;
+            }
+        }
+        else if (NGhostDirectorU.missU == 1 && NGhostDirectorU.Uobake == 0)
+        {
+            NGhostDirectorU.missU = 0;
+            NGhostDirectorU.Uobake = 1;
+            if (NGhostDirectorU.missU == 0)
+            {
+                score -= 50;
+                NGhostDirectorU.missU = 1;
             }
         }
     }
