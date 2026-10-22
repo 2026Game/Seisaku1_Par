@@ -1982,6 +1982,51 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1571239702
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1571239704}
+  - component: {fileID: 1571239703}
+  m_Layer: 0
+  m_Name: NGXGenerator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1571239703
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1571239702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 73b5315a481ee9c4086abb322b9ff8fc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NGXGenerator
+  NGXprefab: {fileID: 422149095640538297, guid: 7cabedcc5e5bdc0449201089612c0f8c, type: 3}
+--- !u!4 &1571239704
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1571239702}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 634.38727, y: 311.75433, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1578084001
 GameObject:
   m_ObjectHideFlags: 0
@@ -2172,6 +2217,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1771824008}
+  - component: {fileID: 1771824009}
   m_Layer: 0
   m_Name: NGVGenerator
   m_TagString: Untagged
@@ -2186,6 +2232,64 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1771824007}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 634.38727, y: 311.75433, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1771824009
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1771824007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d8926c5007724647bf5995b782cee6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NGVGenerator
+  NGVprefab: {fileID: 5056098559139022542, guid: 4f55349a63b5b15428962b8da4b253f4, type: 3}
+--- !u!1 &1796559634
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1796559636}
+  - component: {fileID: 1796559635}
+  m_Layer: 0
+  m_Name: NGYGenerator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1796559635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1796559634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b42ff1dae8180024a87a74cb4cf6f1b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NGYGenerator
+  NGYprefab: {fileID: 1401713853255870906, guid: 867b8ab25659b2c49a982ef828f2a774, type: 3}
+--- !u!4 &1796559636
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1796559634}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 634.38727, y: 311.75433, z: 0}
@@ -2376,6 +2480,51 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1892566784}
   m_CullTransparentMesh: 1
+--- !u!1 &1941524207
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1941524209}
+  - component: {fileID: 1941524208}
+  m_Layer: 0
+  m_Name: NGWGenerator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1941524208
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1941524207}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f4f3d991b884a545b5f4c1e8f39d524, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NGWGenerator
+  NGWprefab: {fileID: 7619490688425195737, guid: b8a609475dc7af945b620bdebba120a3, type: 3}
+--- !u!4 &1941524209
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1941524207}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 634.38727, y: 311.75433, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2034119244
 GameObject:
   m_ObjectHideFlags: 0
@@ -2633,6 +2782,9 @@ SceneRoots:
   - {fileID: 1193765694}
   - {fileID: 785257757}
   - {fileID: 1771824008}
+  - {fileID: 1941524209}
+  - {fileID: 1571239704}
+  - {fileID: 1796559636}
   - {fileID: 243248394}
   - {fileID: 1640087079}
   - {fileID: 2144787627}

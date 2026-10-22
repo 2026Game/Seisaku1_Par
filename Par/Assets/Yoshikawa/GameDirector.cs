@@ -251,8 +251,44 @@ public class GameDirector : MonoBehaviour
             NGhostDirectorU.Uobake = 1;
             if (NGhostDirectorU.missU == 0)
             {
-                score -= 50;
                 NGhostDirectorU.missU = 1;
+            }
+        }
+        else if (NGhostDirectorV.missV == 1 && NGhostDirectorV.Vobake == 0)
+        {
+            NGhostDirectorV.missV = 0;
+            NGhostDirectorV.Vobake = 1;
+            if (NGhostDirectorV.missV == 0)
+            {
+                NGhostDirectorV.missV = 1;
+            }
+        }
+        else if (NGhostDirectorW.missW == 1 && NGhostDirectorW.Wobake == 0)
+        {
+            NGhostDirectorW.missW = 0;
+            NGhostDirectorW.Wobake = 1;
+            if (NGhostDirectorW.missW == 0)
+            {
+                NGhostDirectorW.missW = 1;
+            }
+        }
+        else if (NGhostDirectorX.missX == 1 && NGhostDirectorX.Xobake == 0)
+        {
+            NGhostDirectorX.missX = 0;
+            NGhostDirectorX.Xobake = 1;
+            if (NGhostDirectorX.missX == 0)
+            {
+                NGhostDirectorX.missX = 1;
+            }
+        }
+        else if (NGhostDirectorY.missY == 1 && NGhostDirectorY.Yobake == 0)
+        {
+            NGhostDirectorY.missY = 0;
+            NGhostDirectorY.Yobake = 1;
+            if (NGhostDirectorY.missY == 0)
+            {
+                score -= 50;
+                NGhostDirectorY.missY = 1;
             }
         }
     }

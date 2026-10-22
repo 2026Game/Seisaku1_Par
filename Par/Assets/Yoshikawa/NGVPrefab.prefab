@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1517784278249387435}
+  - component: {fileID: 521376626673431517}
   - component: {fileID: 9148766547357660501}
   m_Layer: 0
   m_Name: NGVPrefab
@@ -32,6 +33,18 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &521376626673431517
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5056098559139022542}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07421ea1e849bb4478c6714516794309, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NGhostDirectorV
 --- !u!212 &9148766547357660501
 SpriteRenderer:
   serializedVersion: 2
