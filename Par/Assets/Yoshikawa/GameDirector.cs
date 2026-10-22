@@ -15,8 +15,8 @@ public class GameDirector : MonoBehaviour
    public static int score = 0;
     float time = 0;
     static int retime;
-    int minute = 0;
-    int hour = 0;
+    public static int minute = 0;
+    public static int hour = 0;
     int stop = 1;
 
 
@@ -287,8 +287,16 @@ public class GameDirector : MonoBehaviour
             NGhostDirectorY.Yobake = 1;
             if (NGhostDirectorY.missY == 0)
             {
-                score -= 50;
                 NGhostDirectorY.missY = 1;
+            }
+        }
+        else if (NGhostDirectorZ.missZ == 1 && NGhostDirectorZ.Zobake == 0)
+        {
+            NGhostDirectorZ.missZ = 0;
+            NGhostDirectorZ.Zobake = 1;
+            if (NGhostDirectorZ.missZ == 0)
+            {
+                NGhostDirectorZ.missZ = 1;
             }
         }
     }

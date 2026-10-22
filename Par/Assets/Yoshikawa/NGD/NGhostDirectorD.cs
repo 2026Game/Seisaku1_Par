@@ -37,5 +37,10 @@ public class NGhostDirectorD : MonoBehaviour
             NGDGenerator.D = 0;
         }
 
+        if (GameDirector.hour == 6)
+        {
+            Destroy(this.gameObject);
+        }
+
     }
 }

@@ -39,6 +39,11 @@ public class GhostDirector : MonoBehaviour
             NGAGenerator.A = 0;
         }
 
+        if(GameDirector.hour==6)
+        {
+            Destroy(this.gameObject);
+        }
+
     }
 
 }
