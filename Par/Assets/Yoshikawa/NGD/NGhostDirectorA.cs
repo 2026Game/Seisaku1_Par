@@ -5,7 +5,7 @@ using UnityEngine.SocialPlatforms.Impl;
 public class GhostDirector : MonoBehaviour
 {
     public static int Aobake = 1;
-    public static int missA = 1;
+    public static int missA = 0;
     float NGAtime = 5;
     int NGAretime = 0;
     void Start()
@@ -23,12 +23,18 @@ public class GhostDirector : MonoBehaviour
             GameDirector.score += 100;
             Destroy(this.gameObject);
             NGAGenerator.A = 0;
-            missA = 1;
+             missA= 1;
         }
-        else if (Input.anyKeyDown && !Input.GetKeyDown(KeyCode.A))
+        else
         {
-            Aobake = 0;
-            
+            missA = 0;
+        }
+        if (Input.anyKeyDown && !Input.GetKeyDown(KeyCode.A))
+        {
+            if (missA == 0 && NGhostDirectorB.missB == 0 && NGhostDirectorC.missC == 0)
+            {
+                GameDirector.score -= 50;
+            }
         }
 
         if(NGAretime==0)

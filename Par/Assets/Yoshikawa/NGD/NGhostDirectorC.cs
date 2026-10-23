@@ -3,7 +3,7 @@ using UnityEngine;
 public class NGhostDirectorC : MonoBehaviour
 {
     public static int Cobake = 1;
-    public static int missC = 1;
+    public static int missC = 0;
     float NGCtime = 5;
     int NGCretime = 0;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -24,9 +24,16 @@ public class NGhostDirectorC : MonoBehaviour
             NGCGenerator.C = 0;
             missC = 1;
         }
-        else if (Input.anyKeyDown && !Input.GetKeyDown(KeyCode.C))
+        else
         {
-            Cobake = 0;
+            missC = 0;
+        }
+        if (Input.anyKeyDown && !Input.GetKeyDown(KeyCode.C))
+        {
+            if (GhostDirector.missA == 0 && NGhostDirectorB.missB == 0 && missC == 0)
+            {
+                GameDirector.score -= 50;
+            }
         }
 
         if (NGCretime == 0)
