@@ -18,7 +18,7 @@ public class MoziRandom : MonoBehaviour
     void Update()
     {
         randomtime+=1*Rstop;
-        if (randomtime == 800)
+        if (randomtime == 700)
         {
             ascii = Random.Range(65, 91); // A(65) Å` Z(90)
             this.RandomText.GetComponent<TextMeshProUGUI>().text =
