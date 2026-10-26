@@ -33,7 +33,7 @@ public class GhostDirector : MonoBehaviour
         {
             if (missA == 0 && NGhostDirectorB.missB == 0 && NGhostDirectorC.missC == 0)
             {
-                GameDirector.score -= 50;
+                //GameDirector.score -= 50;
             }
         }
 
