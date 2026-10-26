@@ -1676,7 +1676,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad3e15211eadcce468b48b74e96eafff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NGAGenerator
-  NGAprefab: {fileID: 4380901706087880403, guid: 0b429b39e199ba845ba8ee036122b342, type: 3}
+  NGAprefab: {fileID: 297514621466829065, guid: 7d1243dd689892d48a1f9fe271a1fb3c, type: 3}
 --- !u!1 &1183476939
 GameObject:
   m_ObjectHideFlags: 0
