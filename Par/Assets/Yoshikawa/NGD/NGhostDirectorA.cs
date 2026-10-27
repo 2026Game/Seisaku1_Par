@@ -7,7 +7,7 @@ public class GhostDirector : MonoBehaviour
     public static int Aobake = 1;
     public static int missA = 0;
     float NGAtime = 5;
-    int NGAretime = 0;
+    public static int NGAretime = 0;
     void Start()
     {
         
