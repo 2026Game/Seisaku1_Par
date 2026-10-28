@@ -4,6 +4,8 @@ public class NGAGenerator : MonoBehaviour
 {
     public GameObject NGAprefab;
     public static int A;
+    public static float x;
+    public static float y;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -23,8 +25,8 @@ public class NGAGenerator : MonoBehaviour
             {
                 GameObject obake;
                 obake = Instantiate(NGAprefab);
-                float x = Random.Range(50, 950);
-                float y = Random.Range(50, 450);
+                x = Random.Range(50, 950);
+                y = Random.Range(50, 450);
                 obake.transform.position = new Vector3(x, y, 0);
             }
            
