@@ -5,7 +5,7 @@ public class NGhostDirectorH : MonoBehaviour
     public static int Hobake = 1;
     public static int missH = 1;
     float NGHtime = 5;
-    int NGHretime = 0;
+    public static int NGHretime = 0;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

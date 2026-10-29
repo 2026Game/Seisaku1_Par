@@ -5,7 +5,7 @@ public class NGhostDirectorX : MonoBehaviour
     public static int Xobake = 1;
     public static int missX = 1;
     float NGXtime = 5;
-    int NGXretime = 0;
+    public static int NGXretime = 0;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

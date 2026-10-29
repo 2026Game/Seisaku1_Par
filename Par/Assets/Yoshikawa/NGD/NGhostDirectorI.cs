@@ -5,7 +5,7 @@ public class NGhostDirectorI : MonoBehaviour
     public static int Iobake = 1;
     public static int missI = 1;
     float NGItime = 5;
-    int NGIretime = 0;
+    public static int NGIretime = 0;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

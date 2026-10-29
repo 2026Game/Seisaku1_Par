@@ -5,7 +5,7 @@ public class NGhostDirectorZ : MonoBehaviour
     public static int Zobake = 1;
     public static int missZ = 1;
     float NGZtime = 5;
-    int NGZretime = 0;
+    public static int NGZretime = 0;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

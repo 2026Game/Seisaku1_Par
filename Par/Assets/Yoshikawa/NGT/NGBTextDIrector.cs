@@ -1,8 +1,7 @@
 using UnityEngine;
-
-public class NGATextGenerator : MonoBehaviour
+using TMPro;
+public class NGBTextDIrector : MonoBehaviour
 {
-    public Transform canvasTransform; // Canvas ‚Ì Transform
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -12,9 +11,7 @@ public class NGATextGenerator : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (NGAGenerator.A == 1)
-        {
-            
-        }
+        GetComponent<TextMeshProUGUI>().text =
+           NGhostDirectorB.NGBretime.ToString();
     }
 }

@@ -5,7 +5,7 @@ public class NGhostDirectorJ : MonoBehaviour
     public static int Jobake = 1;
     public static int missJ = 1;
     float NGJtime = 5;
-    int NGJretime = 0;
+    public static int NGJretime = 0;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

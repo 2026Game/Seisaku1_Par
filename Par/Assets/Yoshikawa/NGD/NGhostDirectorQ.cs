@@ -5,7 +5,7 @@ public class NGhostDirectorQ : MonoBehaviour
     public static int Qobake = 1;
     public static int missQ = 1;
     float NGQtime = 5;
-    int NGQretime = 0;
+    public static int NGQretime = 0;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
