@@ -12,6 +12,7 @@ public class NGGTextDIrector : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        GetComponent<TextMeshProUGUI>().text =
+         NGhostDirectorG.NGGretime.ToString();
     }
 }
