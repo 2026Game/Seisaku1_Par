@@ -3,9 +3,9 @@ using UnityEngine;
 public class NGhostDirectorL : MonoBehaviour
 {
     public static int Lobake = 1;
-    public static int missL = 1;
+    public static int l = 1;
     float NGLtime = 5;
-    int NGLretime = 0;
+    public static int NGLretime = 0;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -15,6 +15,7 @@ public class NGhostDirectorL : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        l = 1;
         NGLtime -= Time.deltaTime;
         NGLretime = (int)NGLtime;
         if (Input.GetKeyDown(KeyCode.L))
@@ -22,12 +23,9 @@ public class NGhostDirectorL : MonoBehaviour
             GameDirector.score += 100;
             Destroy(this.gameObject);
             NGLGenerator.L = 0;
-            missL = 1;
+            
         }
-        else if (Input.anyKeyDown && !Input.GetKeyDown(KeyCode.L))
-        {
-            Lobake = 0;
-        }
+        
 
         if (NGLretime == 0)
         {
@@ -35,6 +33,7 @@ public class NGhostDirectorL : MonoBehaviour
             HPDirector.HP -= 1;
             NGLtime = 5;
             NGLGenerator.L = 0;
+            l = 0;
         }
 
         if (GameDirector.hour == 6)

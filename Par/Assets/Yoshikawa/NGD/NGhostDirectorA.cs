@@ -5,9 +5,9 @@ using UnityEngine.SocialPlatforms.Impl;
 public class GhostDirector : MonoBehaviour
 {
     public static int Aobake = 1;
-    public static int missA = 0;
+    public static int a = 1;
     float NGAtime = 5;
-    int NGAretime = 0;
+    public static int NGAretime = 0;
     void Start()
     {
         
@@ -16,6 +16,7 @@ public class GhostDirector : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        a=1;
         NGAtime -= Time.deltaTime;
         NGAretime = (int)NGAtime;
         if (Input.GetKeyDown(KeyCode.A))
@@ -23,19 +24,10 @@ public class GhostDirector : MonoBehaviour
             GameDirector.score += 100;
             Destroy(this.gameObject);
             NGAGenerator.A = 0;
-             missA= 1;
+            
         }
-        else
-        {
-            missA = 0;
-        }
-        if (Input.anyKeyDown && !Input.GetKeyDown(KeyCode.A))
-        {
-            if (missA == 0 && NGhostDirectorB.missB == 0 && NGhostDirectorC.missC == 0)
-            {
-                //GameDirector.score -= 50;
-            }
-        }
+       
+        
 
         if(NGAretime==0)
         {
@@ -43,6 +35,7 @@ public class GhostDirector : MonoBehaviour
             HPDirector.HP -= 1;
             NGAtime = 5;
             NGAGenerator.A = 0;
+            a = 0;
         }
 
         if(GameDirector.hour==6)
