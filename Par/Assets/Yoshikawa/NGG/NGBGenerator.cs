@@ -23,8 +23,8 @@ public class NGBGenerator : MonoBehaviour
             {
                 GameObject obakeB;
                 obakeB = Instantiate(NGBprefab);
-                float x = Random.Range(50, 950);
-                float y = Random.Range(50, 450);
+                float x = Random.Range(50, 1100);
+                float y = Random.Range(100, 500);
                 obakeB.transform.position = new Vector3(x, y, 0);
             }
 
