@@ -8,7 +8,6 @@ public class GameDirector : MonoBehaviour
     GameObject timerText;
     GameObject minuteText;
     GameObject hourText;
-    GameObject NGA;
     public GhostDirector GD;
     public NGhostDirectorB GDB;
     public static int miss = 0;
@@ -28,7 +27,6 @@ public class GameDirector : MonoBehaviour
         this.timerText = GameObject.Find("Time");
         this.minuteText = GameObject.Find("Minute");
         this.hourText = GameObject.Find("Hour");
-        this.NGA = GameObject.Find("NGA");
     }
 
     // Update is called once per frame
