@@ -29,13 +29,7 @@ public class NGhostDirectorC : MonoBehaviour
         {
             missC = 0;
         }
-        if (Input.anyKeyDown && !Input.GetKeyDown(KeyCode.C))
-        {
-            if (GhostDirector.missA == 0 && NGhostDirectorB.missB == 0 && missC == 0)
-            {
-               // GameDirector.score -= 50;
-            }
-        }
+        
 
         if (NGCretime == 0)
         {

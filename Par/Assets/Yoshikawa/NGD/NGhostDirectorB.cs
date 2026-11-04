@@ -4,7 +4,7 @@ using UnityEngine;
 public class NGhostDirectorB : MonoBehaviour
 {
     public static int Bobake = 1;
-    public static int missB = 0;
+    public static int b = 1;
     float NGBtime = 5;
     public static int NGBretime = 0;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -16,6 +16,7 @@ public class NGhostDirectorB : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        b = 1;
         NGBtime -= Time.deltaTime;
         NGBretime = (int)NGBtime;
         if (Input.GetKeyDown(KeyCode.B))
@@ -23,20 +24,9 @@ public class NGhostDirectorB : MonoBehaviour
             GameDirector.score += 100;
             Destroy(this.gameObject);
             NGBGenerator.B = 0;
-            missB = 1;
-            
         }
-        else
-        {
-            missB = 0;
-        }
-        if (Input.anyKeyDown && !Input.GetKeyDown(KeyCode.B))
-        {
-            if (GhostDirector.missA == 0 && missB == 0 && NGhostDirectorC.missC == 0)
-            {
-               // GameDirector.score -= 50;
-            }
-        }
+        
+       
 
         if (NGBretime == 0)
         {
@@ -44,6 +34,7 @@ public class NGhostDirectorB : MonoBehaviour
             HPDirector.HP -= 1;
             NGBtime = 5;
             NGBGenerator. B= 0;
+            b = 0;
         }
 
         if (GameDirector.hour == 6)
