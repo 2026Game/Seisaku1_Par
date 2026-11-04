@@ -3,7 +3,7 @@ using UnityEngine;
 public class NGhostDirectorQ : MonoBehaviour
 {
     public static int Qobake = 1;
-    public static int missQ = 1;
+    public static int q = 1;
     float NGQtime = 5;
     public static int NGQretime = 0;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -15,6 +15,7 @@ public class NGhostDirectorQ : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        q = 1;
         NGQtime -= Time.deltaTime;
         NGQretime = (int)NGQtime;
         if (Input.GetKeyDown(KeyCode.Q))
@@ -22,12 +23,9 @@ public class NGhostDirectorQ : MonoBehaviour
             GameDirector.score += 100;
             Destroy(this.gameObject);
             NGQGenerator.Q = 0;
-            missQ = 1;
+            
         }
-        else if (Input.anyKeyDown && !Input.GetKeyDown(KeyCode.Q))
-        {
-            Qobake = 0;
-        }
+        
 
         if (NGQretime == 0)
         {
@@ -35,6 +33,7 @@ public class NGhostDirectorQ : MonoBehaviour
             HPDirector.HP -= 1;
             NGQtime = 5;
             NGQGenerator.Q = 0;
+            q = 0;
         }
 
         if (GameDirector.hour == 6)
