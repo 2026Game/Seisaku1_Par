@@ -20,7 +20,7 @@ public class NGhostDirectorX : MonoBehaviour
         NGXretime = (int)NGXtime;
         if (Input.GetKeyDown(KeyCode.X))
         {
-            GameDirector.score += 100;
+            GameDirector.score += 300;
             Destroy(this.gameObject);
             NGXGenerator.X = 0;
             

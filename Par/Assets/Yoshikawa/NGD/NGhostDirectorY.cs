@@ -20,7 +20,7 @@ public class NGhostDirectorY : MonoBehaviour
         NGYretime = (int)NGYtime;
         if (Input.GetKeyDown(KeyCode.Y))
         {
-            GameDirector.score += 100;
+            GameDirector.score += 300;
             Destroy(this.gameObject);
             NGYGenerator.Y = 0;
             

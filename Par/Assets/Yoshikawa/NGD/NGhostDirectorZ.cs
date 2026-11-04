@@ -20,7 +20,7 @@ public class NGhostDirectorZ : MonoBehaviour
         NGZretime = (int)NGZtime;
         if (Input.GetKeyDown(KeyCode.Z))
         {
-            GameDirector.score += 100;
+            GameDirector.score += 300;
             Destroy(this.gameObject);
             NGZGenerator.Z = 0;
             
