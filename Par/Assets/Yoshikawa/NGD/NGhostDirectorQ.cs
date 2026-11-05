@@ -4,6 +4,7 @@ public class NGhostDirectorQ : MonoBehaviour
 {
     public static int Qobake = 1;
     public static int q = 1;
+    int Qrenda = 0;
     float NGQtime = 5;
     public static int NGQretime = 0;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -15,14 +16,20 @@ public class NGhostDirectorQ : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+       
         q = 1;
         NGQtime -= Time.deltaTime;
         NGQretime = (int)NGQtime;
         if (Input.GetKeyDown(KeyCode.Q))
         {
-            GameDirector.score += 100;
-            Destroy(this.gameObject);
-            NGQGenerator.Q = 0;
+            Qrenda += 1;
+            if (Qrenda == 5)
+            {
+                GameDirector.score += 100;
+                Destroy(this.gameObject);
+                NGQGenerator.Q = 0;
+                Qrenda = 0;
+            }
             
         }
         

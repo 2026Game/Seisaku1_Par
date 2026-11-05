@@ -4,6 +4,7 @@ public class NGhostDirectorP : MonoBehaviour
 {
     public static int Pobake = 1;
     public static int p = 1;
+    int Prenda = 0;
     float NGPtime = 5;
     public static int NGPretime = 0;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -20,9 +21,14 @@ public class NGhostDirectorP : MonoBehaviour
         NGPretime = (int)NGPtime;
         if (Input.GetKeyDown(KeyCode.P))
         {
-            GameDirector.score += 100;
-            Destroy(this.gameObject);
-            NGPGenerator.P = 0;
+            Prenda+=1;
+            if (Prenda == 5)
+            {
+                GameDirector.score += 100;
+                Destroy(this.gameObject);
+                NGPGenerator.P = 0;
+                Prenda = 0;
+            }
            
         }
         
