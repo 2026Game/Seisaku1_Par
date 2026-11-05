@@ -4,6 +4,7 @@ public class NGhostDirectorT : MonoBehaviour
 {
     public static int Tobake = 1;
     public static int t = 1;
+    int Trenda = 0;
     float NGTtime = 5;
     public static int NGTretime = 0;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -20,10 +21,13 @@ public class NGhostDirectorT : MonoBehaviour
         NGTretime = (int)NGTtime;
         if (Input.GetKeyDown(KeyCode.T))
         {
-            GameDirector.score += 100;
-            Destroy(this.gameObject);
-            NGTGenerator.T = 0;
-            
+            Trenda += 1;
+            if (Trenda == 5)
+            {
+                GameDirector.score += 100;
+                Destroy(this.gameObject);
+                NGTGenerator.T = 0;
+            }
         }
        
 

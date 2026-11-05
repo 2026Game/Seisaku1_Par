@@ -1337,7 +1337,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7746fcf629fbc74c8b76381786cb51b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NGUGenerator
-  NGUprefab: {fileID: 7766879391053489565, guid: 3f6c8590287e4704a87c19585548aa52, type: 3}
+  NGUprefab: {fileID: 3827524084658406934, guid: 2d7727c50b0055e4ca573672b86fe925, type: 3}
 --- !u!4 &785257757
 Transform:
   m_ObjectHideFlags: 0
@@ -2213,7 +2213,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 240a3bee348741f499f9eeefb6e463b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NGTGenerator
-  NGTprefab: {fileID: 8032551365181268493, guid: 12e20fe6f28f7b04fa3eb074a177af64, type: 3}
+  NGTprefab: {fileID: 1714872667863980971, guid: 0706b813807a2774580120f9be55ff61, type: 3}
 --- !u!4 &1193765694
 Transform:
   m_ObjectHideFlags: 0
@@ -2303,7 +2303,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f72a643c374388d4699698a311c6bc18, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NGRGenerator
-  NGRprefab: {fileID: 6960722369169554658, guid: c7195a11f6ea1f442b6a44198267394d, type: 3}
+  NGRprefab: {fileID: 5901529890146721176, guid: 41d2e157db60f104e8d88c44bc5cf0e1, type: 3}
 --- !u!4 &1280957653
 Transform:
   m_ObjectHideFlags: 0
@@ -2607,7 +2607,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3d1d3f40a4c1029458db1f93474ea3d6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NGSGenerator
-  NGSprefab: {fileID: 5241787143836266341, guid: 7353f8c66c059a34fb1486c05f253977, type: 3}
+  NGSprefab: {fileID: 3823077222779125831, guid: 096dd6be0d69b824aa7bca21a0f836e3, type: 3}
 --- !u!4 &1578084003
 Transform:
   m_ObjectHideFlags: 0

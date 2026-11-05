@@ -4,6 +4,7 @@ public class NGhostDirectorU : MonoBehaviour
 {
     public static int Uobake = 1;
     public static int u = 1;
+    int Urenda = 0;
     float NGUtime = 5;
     public static int NGUretime = 0;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -20,10 +21,13 @@ public class NGhostDirectorU : MonoBehaviour
         NGUretime = (int)NGUtime;
         if (Input.GetKeyDown(KeyCode.U))
         {
-            GameDirector.score += 100;
-            Destroy(this.gameObject);
-            NGUGenerator.U = 0;
-            
+            Urenda += 1;
+            if (Urenda == 5)
+            {
+                GameDirector.score += 100;
+                Destroy(this.gameObject);
+                NGUGenerator.U = 0;
+            }
         }
         
 
