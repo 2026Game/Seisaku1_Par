@@ -77,219 +77,197 @@ public class GameDirector : MonoBehaviour
         {
             NGhostDirectorB.b = 0;
         }
-
-        if (NGhostDirectorD.missD == 1 && NGhostDirectorD.Dobake == 0)
+        if (Input.GetKeyDown(KeyCode.C) && NGhostDirectorC.c == 0)
         {
-            NGhostDirectorD.missD = 0;
-            NGhostDirectorD.Dobake = 1;
-            if (NGhostDirectorD.missD == 0)
-            {
-                NGhostDirectorD.missD = 1;
-            }
+            score -= 50;
         }
-        else if (NGhostDirectorE.missE == 1 && NGhostDirectorE.Eobake == 0)
+        else
         {
-            NGhostDirectorE.missE = 0;
-            NGhostDirectorE.Eobake = 1;
-            if (NGhostDirectorE.missE == 0)
-            {
-                NGhostDirectorE.missE = 1;
-            }
+            NGhostDirectorC.c = 0;
         }
-        else if (NGhostDirectorF.missF == 1 && NGhostDirectorF.Fobake == 0)
+        if (Input.GetKeyDown(KeyCode.D) && NGhostDirectorD.d == 0)
         {
-            NGhostDirectorF.missF = 0;
-            NGhostDirectorF.Fobake = 1;
-            if (NGhostDirectorF.missF == 0)
-            {
-                NGhostDirectorF.missF = 1;
-            }
+            score -= 50;
         }
-        else if (NGhostDirectorG.missG == 1 && NGhostDirectorG.Gobake == 0)
+        else
         {
-            NGhostDirectorG.missG = 0;
-            NGhostDirectorG.Gobake = 1;
-            if (NGhostDirectorG.missG == 0)
-            {
-                NGhostDirectorG.missG = 1;
-            }
+            NGhostDirectorD.d = 0;
         }
-        else if (NGhostDirectorH.missH == 1 && NGhostDirectorH.Hobake == 0)
+        if (Input.GetKeyDown(KeyCode.E) && NGhostDirectorE.e == 0)
         {
-            NGhostDirectorH.missH = 0;
-            NGhostDirectorH.Hobake = 1;
-            if (NGhostDirectorH.missH == 0)
-            {
-                NGhostDirectorH.missH = 1;
-            }
+            score -= 50;
         }
-        else if (NGhostDirectorI.missI == 1 && NGhostDirectorI.Iobake == 0)
+        else
         {
-            NGhostDirectorI.missI = 0;
-            NGhostDirectorI.Iobake = 1;
-            if (NGhostDirectorI.missI == 0)
-            {
-                NGhostDirectorI.missI = 1;
-            }
+            NGhostDirectorE.e = 0;
         }
-        else if (NGhostDirectorJ.missJ == 1 && NGhostDirectorJ.Jobake == 0)
+        if (Input.GetKeyDown(KeyCode.F) && NGhostDirectorF.f == 0)
         {
-            NGhostDirectorJ.missJ = 0;
-            NGhostDirectorJ.Jobake = 1;
-            if (NGhostDirectorJ.missJ == 0)
-            {
-                NGhostDirectorJ.missJ = 1;
-            }
+            score -= 50;
         }
-        else if (NGhostDirectorK.missK == 1 && NGhostDirectorK.Kobake == 0)
+        else
         {
-            NGhostDirectorK.missK = 0;
-            NGhostDirectorK.Kobake = 1;
-            if (NGhostDirectorK.missK == 0)
-            {
-                NGhostDirectorK.missK = 1;
-            }
+            NGhostDirectorF.f = 0;
         }
-        else if (NGhostDirectorL.missL == 1 && NGhostDirectorL.Lobake == 0)
+        if (Input.GetKeyDown(KeyCode.G) && NGhostDirectorG.g == 0)
         {
-            NGhostDirectorL.missL = 0;
-            NGhostDirectorL.Lobake = 1;
-            if (NGhostDirectorL.missL == 0)
-            {
-                NGhostDirectorL.missL = 1;
-            }
+            score -= 50;
         }
-        else if (NGhostDirectorM.missM == 1 && NGhostDirectorM.Mobake == 0)
+        else
         {
-            NGhostDirectorM.missM = 0;
-            NGhostDirectorM.Mobake = 1;
-            if (NGhostDirectorM.missM == 0)
-            {
-                NGhostDirectorM.missM = 1;
-            }
+            NGhostDirectorG.g = 0;
         }
-        else if (NGhostDirectorN.missN == 1 && NGhostDirectorN.Nobake == 0)
+        if (Input.GetKeyDown(KeyCode.H) && NGhostDirectorH.h == 0)
         {
-            NGhostDirectorN.missN = 0;
-            NGhostDirectorN.Nobake = 1;
-            if (NGhostDirectorN.missN == 0)
-            {
-                NGhostDirectorN.missN = 1;
-            }
+            score -= 50;
         }
-        else if (NGhostDirectorO.missO == 1 && NGhostDirectorO.Oobake == 0)
+        else
         {
-            NGhostDirectorO.missO = 0;
-            NGhostDirectorO.Oobake = 1;
-            if (NGhostDirectorO.missO == 0)
-            {
-                NGhostDirectorO.missO = 1;
-            }
+            NGhostDirectorH.h = 0;
         }
-        else if (NGhostDirectorP.missP == 1 && NGhostDirectorP.Pobake == 0)
+        if (Input.GetKeyDown(KeyCode.I) && NGhostDirectorI.i == 0)
         {
-            NGhostDirectorP.missP = 0;
-            NGhostDirectorP.Pobake = 1;
-            if (NGhostDirectorP.missP == 0)
-            {
-                NGhostDirectorP.missP = 1;
-            }
+            score -= 50;
         }
-        else if (NGhostDirectorQ.missQ == 1 && NGhostDirectorQ.Qobake == 0)
+        else
         {
-            NGhostDirectorQ.missQ = 0;
-            NGhostDirectorQ.Qobake = 1;
-            if (NGhostDirectorQ.missQ == 0)
-            {
-                NGhostDirectorQ.missQ = 1;
-            }
+            NGhostDirectorI.i = 0;
         }
-        else if (NGhostDirectorR.missR == 1 && NGhostDirectorR.Robake == 0)
+        if (Input.GetKeyDown(KeyCode.J) && NGhostDirectorJ.j == 0)
         {
-            NGhostDirectorR.missR = 0;
-            NGhostDirectorR.Robake = 1;
-            if (NGhostDirectorR.missR == 0)
-            {
-                NGhostDirectorR.missR = 1;
-            }
+            score -= 50;
         }
-        else if (NGhostDirectorS.missS == 1 && NGhostDirectorS.Sobake == 0)
+        else
         {
-            NGhostDirectorS.missS = 0;
-            NGhostDirectorS.Sobake = 1;
-            if (NGhostDirectorS.missS == 0)
-            {
-                NGhostDirectorS.missS = 1;
-            }
+            NGhostDirectorJ.j = 0;
         }
-        else if (NGhostDirectorT.missT == 1 && NGhostDirectorT.Tobake == 0)
+        if (Input.GetKeyDown(KeyCode.K) && NGhostDirectorK.k == 0)
         {
-            NGhostDirectorT.missT = 0;
-            NGhostDirectorT.Tobake = 1;
-            if (NGhostDirectorT.missT == 0)
-            {
-                NGhostDirectorT.missT = 1;
-            }
+            score -= 50;
         }
-        else if (NGhostDirectorU.missU == 1 && NGhostDirectorU.Uobake == 0)
+        else
         {
-            NGhostDirectorU.missU = 0;
-            NGhostDirectorU.Uobake = 1;
-            if (NGhostDirectorU.missU == 0)
-            {
-                NGhostDirectorU.missU = 1;
-            }
+            NGhostDirectorK.k = 0;
         }
-        else if (NGhostDirectorV.missV == 1 && NGhostDirectorV.Vobake == 0)
+        if (Input.GetKeyDown(KeyCode.L) && NGhostDirectorL.l == 0)
         {
-            NGhostDirectorV.missV = 0;
-            NGhostDirectorV.Vobake = 1;
-            if (NGhostDirectorV.missV == 0)
-            {
-                NGhostDirectorV.missV = 1;
-            }
+            score -= 50;
         }
-        else if (NGhostDirectorW.missW == 1 && NGhostDirectorW.Wobake == 0)
+        else
         {
-            NGhostDirectorW.missW = 0;
-            NGhostDirectorW.Wobake = 1;
-            if (NGhostDirectorW.missW == 0)
-            {
-                NGhostDirectorW.missW = 1;
-            }
+            NGhostDirectorL.l = 0;
         }
-        else if (NGhostDirectorX.missX == 1 && NGhostDirectorX.Xobake == 0)
+        if (Input.GetKeyDown(KeyCode.M) && NGhostDirectorM.m == 0)
         {
-            NGhostDirectorX.missX = 0;
-            NGhostDirectorX.Xobake = 1;
-            if (NGhostDirectorX.missX == 0)
-            {
-                NGhostDirectorX.missX = 1;
-            }
+            score -= 50;
         }
-        else if (NGhostDirectorY.missY == 1 && NGhostDirectorY.Yobake == 0)
+        else
         {
-            NGhostDirectorY.missY = 0;
-            NGhostDirectorY.Yobake = 1;
-            if (NGhostDirectorY.missY == 0)
-            {
-                NGhostDirectorY.missY = 1;
-            }
+            NGhostDirectorM.m = 0;
         }
-        else if (NGhostDirectorZ.missZ == 1 && NGhostDirectorZ.Zobake == 0)
+        if (Input.GetKeyDown(KeyCode.N) && NGhostDirectorN.n == 0)
         {
-            NGhostDirectorZ.missZ = 0;
-            NGhostDirectorZ.Zobake = 1;
-            if (NGhostDirectorZ.missZ == 0)
-            {
-                NGhostDirectorZ.missZ = 1;
-            }
+            score -= 50;
         }
-        
-            
-           
-            
-        
-        
+        else
+        {
+            NGhostDirectorN.n = 0;
+        }
+        if (Input.GetKeyDown(KeyCode.O) && NGhostDirectorO.o == 0)
+        {
+            score -= 50;
+        }
+        else
+        {
+            NGhostDirectorO.o = 0;
+        }
+        if (Input.GetKeyDown(KeyCode.P) && NGhostDirectorP.p == 0)
+        {
+            score -= 50;
+        }
+        else
+        {
+            NGhostDirectorP.p = 0;
+        }
+        if (Input.GetKeyDown(KeyCode.Q) && NGhostDirectorQ.q == 0)
+        {
+            score -= 50;
+        }
+        else
+        {
+            NGhostDirectorQ.q = 0;
+        }
+        if (Input.GetKeyDown(KeyCode.R) && NGhostDirectorR.r == 0)
+        {
+            score -= 50;
+        }
+        else
+        {
+            NGhostDirectorR.r = 0;
+        }
+        if (Input.GetKeyDown(KeyCode.S) && NGhostDirectorS.s == 0)
+        {
+            score -= 50;
+        }
+        else
+        {
+            NGhostDirectorS.s = 0;
+        }
+        if (Input.GetKeyDown(KeyCode.T) && NGhostDirectorT.t == 0)
+        {
+            score -= 50;
+        }
+        else
+        {
+            NGhostDirectorT.t = 0;
+        }
+        if (Input.GetKeyDown(KeyCode.U) && NGhostDirectorU.u == 0)
+        {
+            score -= 50;
+        }
+        else
+        {
+            NGhostDirectorU.u = 0;
+        }
+        if (Input.GetKeyDown(KeyCode.V) && NGhostDirectorV.v == 0)
+        {
+            score -= 50;
+        }
+        else
+        {
+            NGhostDirectorV.v = 0;
+        }
+        if (Input.GetKeyDown(KeyCode.W) && NGhostDirectorW.w == 0)
+        {
+            score -= 50;
+        }
+        else
+        {
+            NGhostDirectorW.w = 0;
+        }
+        if (Input.GetKeyDown(KeyCode.X) && NGhostDirectorX.x == 0)
+        {
+            score -= 50;
+        }
+        else
+        {
+            NGhostDirectorX.x = 0;
+        }
+        if (Input.GetKeyDown(KeyCode.Y) && NGhostDirectorY.y == 0)
+        {
+            score -= 50;
+        }
+        else
+        {
+            NGhostDirectorY.y = 0;
+        }
+        if (Input.GetKeyDown(KeyCode.Z) && NGhostDirectorZ.z == 0)
+        {
+            score -= 50;
+        }
+        else
+        {
+            NGhostDirectorZ.z = 0;
+        }
     }
 }

@@ -3,7 +3,7 @@ using UnityEngine;
 public class NGhostDirectorZ : MonoBehaviour
 {
     public static int Zobake = 1;
-    public static int missZ = 1;
+    public static int z = 1;
     float NGZtime = 5;
     public static int NGZretime = 0;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -15,19 +15,17 @@ public class NGhostDirectorZ : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        z = 1;
         NGZtime -= Time.deltaTime;
         NGZretime = (int)NGZtime;
         if (Input.GetKeyDown(KeyCode.Z))
         {
-            GameDirector.score += 100;
+            GameDirector.score += 300;
             Destroy(this.gameObject);
             NGZGenerator.Z = 0;
-            missZ = 1;
+            
         }
-        else if (Input.anyKeyDown && !Input.GetKeyDown(KeyCode.Z))
-        {
-            Zobake = 0;
-        }
+       
 
         if (NGZretime == 0)
         {
@@ -35,6 +33,7 @@ public class NGhostDirectorZ : MonoBehaviour
             HPDirector.HP -= 1;
             NGZtime = 5;
             NGZGenerator.Z = 0;
+            z = 0;
         }
 
         if (GameDirector.hour == 6)

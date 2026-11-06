@@ -3,7 +3,7 @@ using UnityEngine;
 public class NGhostDirectorC : MonoBehaviour
 {
     public static int Cobake = 1;
-    public static int missC = 0;
+    public static int c = 1;
     float NGCtime = 5;
     public static int NGCretime = 0;
 
@@ -16,6 +16,7 @@ public class NGhostDirectorC : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        c = 1;
         NGCtime -= Time.deltaTime;
         NGCretime = (int)NGCtime;
         if (Input.GetKeyDown(KeyCode.C))
@@ -23,12 +24,9 @@ public class NGhostDirectorC : MonoBehaviour
             GameDirector.score += 100;
             Destroy(this.gameObject);
             NGCGenerator.C = 0;
-            missC = 1;
+            
         }
-        else
-        {
-            missC = 0;
-        }
+        
         
 
         if (NGCretime == 0)
@@ -37,6 +35,7 @@ public class NGhostDirectorC : MonoBehaviour
             HPDirector.HP -= 1;
             NGCtime = 5;
             NGCGenerator.C = 0;
+            c = 0;
         }
 
         if (GameDirector.hour == 6)
