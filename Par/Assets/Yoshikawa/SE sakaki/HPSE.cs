@@ -2,7 +2,8 @@ using UnityEngine;
 
 public class HPSE : MonoBehaviour
 {
-    public AudioSource audioSource;
+    public AudioSource damageSE;
+    public AudioSource heartSE;
 
     int oldHP = 3;
 
@@ -10,7 +11,20 @@ public class HPSE : MonoBehaviour
     {
         if (oldHP > HPDirector.HP)
         {
-            audioSource.Play();
+            damageSE.Play();
+        }
+
+        if (HPDirector.HP == 1)
+        {
+            if (!heartSE.isPlaying)
+            {
+                heartSE.Play();
+            }
+        }
+
+        if (HPDirector.HP <= 0)
+        {
+            heartSE.Stop();
         }
 
         oldHP = HPDirector.HP;
