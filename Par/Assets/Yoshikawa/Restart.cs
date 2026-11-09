@@ -12,9 +12,9 @@ public class Restart : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(GameDirector.hour==6)
+        if(GameDirector.hour==1)
         {
-            if (Input.GetKeyDown(KeyCode.R))
+            if (Input.GetKeyDown(KeyCode.Space))
             {
                 SceneManager.LoadScene("StartScene");
             }
