@@ -26,9 +26,10 @@ public class MoziRandom : MonoBehaviour
             randomtime = 0;
 
         }
-        if(GameDirector.hour==6)
+        if(GameDirector.hour==6 || HPDirector.HP==0)
         {
             Rstop = 0;
+            ascii = 0;
         }
     }
 }

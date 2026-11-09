@@ -6,7 +6,7 @@ public class ClockController : MonoBehaviour
 
     void Update()
     {
-        if (GameDirector.hour < 6)
+        if (GameDirector.hour < 6 && HPDirector.HP>=1)
         {
             transform.Rotate(0, 0, -rotationSpeed * Time.deltaTime);
         }
