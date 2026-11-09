@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Restart : MonoBehaviour
 {
@@ -11,6 +12,12 @@ public class Restart : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(GameDirector.hour==6)
+        {
+            if (Input.GetKeyDown(KeyCode.R))
+            {
+                SceneManager.LoadScene("StartScene");
+            }
+        }
     }
 }
