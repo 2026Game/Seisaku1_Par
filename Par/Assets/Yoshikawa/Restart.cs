@@ -12,7 +12,7 @@ public class Restart : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(GameDirector.hour==6 || HPDirector.HP==0)
+        if(GameDirector.hour==6 || HPDirector.HP<=0)
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {

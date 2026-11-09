@@ -56,7 +56,7 @@ public class GameDirector : MonoBehaviour
             hour++;
         }
 
-        if(hour==6 || HPDirector.HP==0)
+        if(hour==6 || HPDirector.HP<=0)
         {
             stop = 0;
             time = 0;
