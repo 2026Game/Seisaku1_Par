@@ -13,10 +13,10 @@ public class GameDirector : MonoBehaviour
     public static int miss = 0;
    public static int score = 0;
     float time = 0;
-    static int retime;
+    public static int retime;
     public static int minute = 0;
     public static int hour = 0;
-    int stop = 1;
+    public static int stop = 1;
 
 
 
@@ -59,6 +59,7 @@ public class GameDirector : MonoBehaviour
         if(hour==6 || HPDirector.HP==0)
         {
             stop = 0;
+            time = 0;
         }
 
         if(Input.GetKeyDown(KeyCode.A) && GhostDirector.a == 0)

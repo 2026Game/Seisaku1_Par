@@ -17,6 +17,12 @@ public class Restart : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Space))
             {
                 SceneManager.LoadScene("StartScene");
+                GameDirector.score = 0;
+                GameDirector.retime = 0;
+                GameDirector.minute = 0;
+                GameDirector.hour = 0;
+                GameDirector.stop = 1;
+                HPDirector.HP = 3;
             }
         }
     }
