@@ -10,5 +10,6 @@ public class ClockController : MonoBehaviour
         {
             transform.Rotate(0, 0, -rotationSpeed * Time.deltaTime);
         }
+
     }
 }
