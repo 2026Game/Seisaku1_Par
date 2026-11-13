@@ -8,6 +8,7 @@ public class MoziRandom : MonoBehaviour
    public static int ascii;
     int randomtime = 0;
     int Rstop = 1;
+    int addSpeed = 1;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -17,16 +18,24 @@ public class MoziRandom : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        randomtime+=1*Rstop;
-        if (randomtime == 200)
+        randomtime+=1*Rstop*addSpeed;
+        if (randomtime >= 500)
         {
-            ascii = Random.Range(65, 91); // A(65) Å` Z(90)
+            ascii = Random.Range(30, 91); // A(65) Å` Z(90)
             this.RandomText.GetComponent<TextMeshProUGUI>().text =
                        ((char)ascii).ToString();
             randomtime = 0;
 
         }
-        if(GameDirector.hour==6 || HPDirector.HP==0)
+        if(GameDirector.hour==0 && GameDirector.minute<=3)
+        {
+            addSpeed = 2;
+        }
+        if (GameDirector.hour == 5 && GameDirector.minute >= 3)
+        {
+            addSpeed = 2;
+        }
+        if (GameDirector.hour==6 || HPDirector.HP==0)
         {
             Rstop = 0;
             ascii = 0;

@@ -3,31 +3,37 @@ using UnityEngine;
 public class HPDirector : MonoBehaviour
 {
     public static int HP = 3;
-    GameObject hp1;
-    GameObject hp2;
-    GameObject hp3;
+    public GameObject pHP;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        this.hp1= GameObject.Find("HP1");
-        this.hp2 = GameObject.Find("HP2");
-        this.hp3 = GameObject.Find("HP3");
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(HP==2)
+        if(HP>=3)
         {
-            Destroy(this.hp3);
+            GameObject PHP;
+            PHP=Instantiate(pHP);
+            PHP.transform.position = new Vector3(-700, -155, 0);
+            
         }
-        if (HP == 1)
+        if (HP >= 2)
         {
-            Destroy(this.hp2);
+            GameObject PHP2;
+            PHP2 = Instantiate(pHP);
+            PHP2.transform.position = new Vector3(-764, -155, 0);
+           
         }
-        if (HP == 0)
+        if (HP >= 1)
         {
-            Destroy(this.hp1);
+            GameObject PHP3;
+            PHP3 = Instantiate(pHP);
+            PHP3.transform.position = new Vector3(-830, -155, 0);
+            
         }
+        
     }
 }
