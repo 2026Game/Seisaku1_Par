@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class DestroyHP : MonoBehaviour
+public class DestroyHP2 : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -11,6 +11,9 @@ public class DestroyHP : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if (HPDirector.HP == 1)
+        {
+            Destroy(gameObject);
+        }
     }
 }
