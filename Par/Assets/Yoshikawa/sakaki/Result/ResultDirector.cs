@@ -3,24 +3,13 @@ using TMPro;
 
 public class ResultDirector : MonoBehaviour
 {
-    GameObject resultPanel;
+    public GameObject resultPanel;
 
-    GameObject scoreText;
-    GameObject hpText;
-    GameObject timeText;
+    public TextMeshProUGUI scoreText;
+    public TextMeshProUGUI hpText;
+    public TextMeshProUGUI timeText;
 
     bool isResult = false;
-
-    void Start()
-    {
-        resultPanel = GameObject.Find("ResultPanel");
-
-        scoreText = GameObject.Find("ScoreText");
-        hpText = GameObject.Find("HPText");
-        timeText = GameObject.Find("TimeText");
-
-        resultPanel.SetActive(false);
-    }
 
     void Update()
     {
@@ -30,13 +19,9 @@ public class ResultDirector : MonoBehaviour
 
             resultPanel.SetActive(true);
 
-            scoreText.GetComponent<TextMeshProUGUI>().text =
-                "SCORE : " + GameDirector.score;
-
-            hpText.GetComponent<TextMeshProUGUI>().text =
-                "HP : " + HPDirector.HP;
-
-            timeText.GetComponent<TextMeshProUGUI>().text =
+            scoreText.text = "SCORE : " + GameDirector.score;
+            hpText.text = "HP : " + HPDirector.HP;
+            timeText.text =
                 "TIME : "
                 + GameDirector.hour + ":"
                 + GameDirector.minute + ":"

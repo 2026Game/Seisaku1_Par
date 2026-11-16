@@ -330,6 +330,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45331403dc544b64fbc1a246f2efc804, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ResultDirector
+  resultPanel: {fileID: 924310991}
+  scoreText: {fileID: 691708466}
+  hpText: {fileID: 1735766958}
+  timeText: {fileID: 1558970300}
 --- !u!4 &136476920
 Transform:
   m_ObjectHideFlags: 0
@@ -2409,9 +2413,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38e5b51f7a2f4804199af4e59af5ee9e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::HPDirector
-  pHP: {fileID: 0}
-  pHP2: {fileID: 0}
-  pHP3: {fileID: 0}
+  pHP: {fileID: 8553622651647785318, guid: a6f223960cb5f3d428e7f2fcb325eb65, type: 3}
+  pHP2: {fileID: 3023372532088032003, guid: 34a4ec3666b23214da4a1f57a86218f9, type: 3}
+  pHP3: {fileID: 7202704985754314271, guid: 15630d75f1e9bb64eafd357811c7eefe, type: 3}
 --- !u!1 &1127393829
 GameObject:
   m_ObjectHideFlags: 0
@@ -4445,3 +4449,5 @@ SceneRoots:
   - {fileID: 988258964}
   - {fileID: 1609012910}
   - {fileID: 1306385796}
+  - {fileID: 136476920}
+  - {fileID: 190347987}
