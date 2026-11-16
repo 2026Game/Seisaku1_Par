@@ -24,7 +24,7 @@ public class ResultDirector : MonoBehaviour
             timeText.text =
                 "TIME : "
                 + GameDirector.hour + ":"
-                + GameDirector.minute + ":"
+                + GameDirector.minute
                 + GameDirector.retime;
         }
     }
