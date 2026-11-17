@@ -23,7 +23,7 @@ public class NGhostDirectorH : MonoBehaviour
             GameDirector.score += 100;
             Destroy(this.gameObject);
             NGHGenerator.H = 0;
-            if (HPDirector.HP <= 3)
+            if (HPDirector.HP < 3)
             {
                 HPDirector.HP += 1;
             }
