@@ -20,7 +20,7 @@ public class ResultDirector : MonoBehaviour
             resultPanel.SetActive(true);
 
             scoreText.text = "SCORE : " + GameDirector.score;
-            hpText.text = "HP : " + HPDirector.HP;
+            hpText.text = "HP : " + HPDirector.HP + "HP";
             timeText.text =
                 "TIME : "
                 + GameDirector.hour + ":"
