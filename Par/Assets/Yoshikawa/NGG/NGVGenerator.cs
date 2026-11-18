@@ -24,7 +24,7 @@ public class NGVGenerator : MonoBehaviour
                 GameObject obake;
                 obake = Instantiate(NGVprefab);
                 float x = Random.Range(-830, 740);
-                float y = Random.Range(-200, 600);
+                float y = Random.Range(-100, 600);
                 obake.transform.position = new Vector3(x, y, 0);
             }
 
