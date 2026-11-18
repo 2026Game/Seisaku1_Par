@@ -19,7 +19,7 @@ public class MoziRandom : MonoBehaviour
     void Update()
     {
         randomtime+=1*Rstop*addSpeed;
-        if (randomtime >= 201 && randomtime < 202)
+        if (randomtime >= 202 && randomtime < 203)
         {
             ascii = Random.Range(60, 91); // A(65) ` Z(90)
             this.RandomText.GetComponent<TextMeshProUGUI>().text =
@@ -32,11 +32,11 @@ public class MoziRandom : MonoBehaviour
         }
         if(GameDirector.hour==0 && GameDirector.minute<3)
         {
-            addSpeed = 3;
+            addSpeed = 2;
         }
         if (GameDirector.hour == 5 && GameDirector.minute < 3)
         {
-            addSpeed = 3;
+            addSpeed = 2;
         }
         if (GameDirector.hour==6 || HPDirector.HP<=0)
         {
