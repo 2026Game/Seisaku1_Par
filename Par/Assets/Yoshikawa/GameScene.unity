@@ -2713,7 +2713,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e059e68c70232034db08be8a13955ac9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::NGHGenerator
-  NGHprefab: {fileID: 8417567965856490016, guid: a9dbcd010ca4ccc438fcf90d59ab023d, type: 3}
+  NGHprefab: {fileID: 4757364789181996256, guid: 5835788e2d470d047a5867d58aab788e, type: 3}
 --- !u!4 &1421304085
 Transform:
   m_ObjectHideFlags: 0
