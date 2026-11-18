@@ -32,11 +32,11 @@ public class MoziRandom : MonoBehaviour
         }
         if(GameDirector.hour==2 && GameDirector.minute<=3)
         {
-            addSpeed = 2;
+            addSpeed = 3;
         }
         if (GameDirector.hour == 5 && GameDirector.minute >= 3)
         {
-            addSpeed = 2;
+            addSpeed = 3;
         }
         if (GameDirector.hour==6 || HPDirector.HP==0)
         {
