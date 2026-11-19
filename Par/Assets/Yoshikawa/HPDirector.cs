@@ -3,9 +3,9 @@ using UnityEngine;
 public class HPDirector : MonoBehaviour
 {
     public static int HP = 3;
-    int sHP;
-    int sHP2;
-    int sHP3;
+    public static int sHP;
+    public static int sHP2;
+    public static int sHP3;
     public GameObject pHP;
     public GameObject pHP2;
     public GameObject pHP3;
