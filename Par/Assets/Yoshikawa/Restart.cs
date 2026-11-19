@@ -23,6 +23,9 @@ public class Restart : MonoBehaviour
                 GameDirector.hour = 0;
                 GameDirector.stop = 1;
                 HPDirector.HP = 3;
+                HPDirector.sHP = 0;
+                HPDirector.sHP2 = 0;
+                HPDirector.sHP3 = 0;
             }
         }
     }

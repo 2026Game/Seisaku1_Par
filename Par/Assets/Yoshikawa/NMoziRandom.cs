@@ -19,13 +19,13 @@ public class MoziRandom : MonoBehaviour
     void Update()
     {
         randomtime+=1*Rstop*addSpeed;
-        if (randomtime >= 202 && randomtime < 203)
+        if (randomtime >= 252 && randomtime < 253)
         {
             ascii = Random.Range(60, 91); // A(65) ` Z(90)
             this.RandomText.GetComponent<TextMeshProUGUI>().text =
                        ((char)ascii).ToString();
         }
-        if(randomtime>=203)
+        if(randomtime>=253)
         {
             ascii = 0;
             randomtime = 0;
