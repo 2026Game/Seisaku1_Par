@@ -42,7 +42,6 @@ public class NGhostDirectorH : MonoBehaviour
         if (NGHretime == 0)
         {
             Destroy(gameObject);
-            HPDirector.HP -= 1;
             NGHtime = 5;
             NGHGenerator.H = 0;
             h = 0;
