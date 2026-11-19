@@ -11,6 +11,9 @@ public class UMDDirector : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        if(GameDirector.hour==2 && GameDirector.minute<=3)
+        {
+            transform.position = new Vector3(765, 425, 0);
+        }
     }
 }
