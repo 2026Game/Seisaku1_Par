@@ -13,7 +13,7 @@ public class BMDirector : MonoBehaviour
     {
         if (GameDirector.hour == 5 && GameDirector.minute < 6)
         {
-            transform.position = new Vector3(765, 425, 0);
+            transform.position = new Vector3(700, 425, 0);
         }
         else
         {

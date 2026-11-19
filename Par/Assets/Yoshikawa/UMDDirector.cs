@@ -13,7 +13,7 @@ public class UMDDirector : MonoBehaviour
     {
         if(GameDirector.hour==2 && GameDirector.minute<3)
         {
-            transform.position = new Vector3(765, 425, 0);
+            transform.position = new Vector3(700, 425, 0);
         }
         else
         {
