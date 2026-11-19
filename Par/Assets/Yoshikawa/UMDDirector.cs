@@ -15,5 +15,9 @@ public class UMDDirector : MonoBehaviour
         {
             transform.position = new Vector3(765, 425, 0);
         }
+        else
+        {
+            transform.position = new Vector3(1440, -300, 0);
+        }
     }
 }
