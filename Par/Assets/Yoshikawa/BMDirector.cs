@@ -11,7 +11,7 @@ public class BMDirector : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (GameDirector.hour == 5 && GameDirector.minute <= 6)
+        if (GameDirector.hour == 5 && GameDirector.minute < 6)
         {
             transform.position = new Vector3(765, 425, 0);
         }
