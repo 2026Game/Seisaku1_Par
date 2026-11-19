@@ -30,15 +30,19 @@ public class MoziRandom : MonoBehaviour
             ascii = 0;
             randomtime = 0;
         }
-        if(GameDirector.hour==0 && GameDirector.minute<3)
+        if(GameDirector.hour==2 && GameDirector.minute<3)
         {
             addSpeed = 2;
         }
-        if (GameDirector.hour == 5 && GameDirector.minute < 3)
+        else if (GameDirector.hour == 5 && GameDirector.minute < 6)
         {
             addSpeed = 2;
         }
-        if (GameDirector.hour==6 || HPDirector.HP<=0)
+        else
+        {
+            addSpeed = 1;
+        }
+        if (GameDirector.hour == 6 || HPDirector.HP <= 0)
         {
             Rstop = 0;
             ascii = 0;
